@@ -17,7 +17,7 @@ const AUTH_USER = gql`
 const Login = () => {
   const [response, saveResponse] = useState(null);
   const[auth] = useMutation(AUTH_USER);
-  const route = useRouter();
+  const router = useRouter();
 
   const formik = useFormik({
     initialValues: {
@@ -45,17 +45,17 @@ const Login = () => {
         cleanState(true);
 
       } catch (error) {
-        saveResponse(error.message.replace('GraphQL erro: ', ''));
+        saveResponse(error.message.replace('GraphQL error: ', ''));
         cleanState(false);
       }
     }
   });
 
   const cleanState = (redirect) => {
+    saveResponse(null);
     setTimeout(() => {
-      saveResponse(null);
       if (redirect) {
-        route.push('/');
+        router.push('/');
       }
     }, 3000);
   };
