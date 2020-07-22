@@ -26,6 +26,7 @@ const Layout = (props) => {
           <div className="flex min-h-screen">
             <SideBar />
             <main className="sm:w-2/3 xl:w-4/5 sm:min-h-screen p-5">
+              <Header />
               { props.children }
             </main>
           </div>

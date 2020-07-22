@@ -1,5 +1,4 @@
 import React, { useState, Fragment } from 'react';
-import Head from 'next/head'
 import Layout from '../components/Layout';
 import {useFormik} from 'formik';
 import * as Yup from 'yup';
