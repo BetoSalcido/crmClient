@@ -16,6 +16,8 @@
     "node-fetch": "^2.6.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "sweetalert2": "^9.17.0",
+    "tailwindcss": "^1.4.6",
     "yup": "^0.29.1"
   }
 }

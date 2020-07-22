@@ -30,7 +30,7 @@ const handlerSession = () => {
       <h1 className="mr-2">Welcome: {data.getUser.name} {data.getUser.lastName} </h1>
       <button className="bg-blue-800 w-full sm:w-auto font-bold uppercase text-xs rounded py-1 px-2 text-white shadow-md" 
         type="button"
-        onClick={handlerSession()}>
+        onClick={handlerSession}>
           Log Out
       </button>
     </div>
